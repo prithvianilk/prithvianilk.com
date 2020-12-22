@@ -10,7 +10,6 @@ const Landing = () => {
     <>
       <Head>
         <title>Prithvi Anil Kumar</title>
-        <script src="https://use.fontawesome.com/02f68481d8.js"></script>
       </Head>
       <MainContainer>
         <InnerContainer>
