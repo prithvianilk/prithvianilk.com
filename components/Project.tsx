@@ -24,14 +24,21 @@ const Project: React.FC<ProjectProps> = ({
       style={{
         ...style,
       }}
-      className="bg-white text-black my-10 sm:mx-10 mx-0 p-10 sm:w-1/3 w-full border border-black rounded-md"
+      className="bg-white text-black my-10 lg:mx-10 mx-0 p-10 lg:w-10/12 w-full border border-black rounded-lg flex flex-col justify-between"
       {...mouseHandlers}
     >
-      <a className="text-3xl font-semibold hover:text-title-red" href={link}>
-        {name}
+      <div>
+        <div className="text-3xl font-semibold">{name}</div>
+        <p className="text-gray-700 text-lg my-2">{short}</p>
+        <div className="text-lg">{description}</div>
+      </div>
+      <a
+        target="_blank"
+        className="hover:text-title-red hover:font-bold"
+        href={link}
+      >
+        Link to project
       </a>
-      <p className="text-gray-700 text-lg my-2">{short}</p>
-      <div className="text-md">{description}</div>
     </animated.div>
   );
 };
