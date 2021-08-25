@@ -2,4 +2,4 @@
 
 The code to my website.
 
-Made with Next.js, tailwindcss and typescript.
+Made with Next.js, tailwindcss and Typescript.
