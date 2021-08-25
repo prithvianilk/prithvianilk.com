@@ -4,11 +4,13 @@ module.exports = {
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
-      backgroundImage: (theme) => ({
-        ocean: "url('/ocean.jpg')",
-      }),
+      colors: {
+        "white-bg": "#FEF7FC",
+        "title-red": "#E36E60",
+      },
       fontFamily: {
-        limelight: ["Limelight", "cursive"],
+        krona: ["Krona One", "sans-serif"],
+        karla: ["Karla", "sans-serif"],
       },
     },
   },
