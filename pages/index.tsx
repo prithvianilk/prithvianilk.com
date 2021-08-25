@@ -51,7 +51,7 @@ const index: React.FC<indexProps> = () => (
         rel="stylesheet"
       />
     </Head>
-    <div className="flex justify-around w-full h-screen text-black bg-white-bg">
+    <div className="flex justify-around w-full text-black bg-white-bg">
       <div className="flex flex-col justify-between sm:w-9/12 w-10/12 my-24 mx-auto">
         <div className="flex justify-between mb-10">
           <div>
