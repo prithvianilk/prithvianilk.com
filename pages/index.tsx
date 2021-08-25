@@ -51,8 +51,8 @@ const index: React.FC<indexProps> = () => (
         rel="stylesheet"
       />
     </Head>
-    <div className="flex justify-around w-full text-black bg-white-bg">
-      <div className="flex flex-col justify-between sm:w-9/12 w-10/12 my-24 mx-auto">
+    <div className="flex justify-around min-h-screen w-full text-black bg-white-bg">
+      <div className="flex flex-col justify-between sm:w-9/12 w-10/12 sm:my-24 my-16 mx-auto">
         <div className="flex justify-between mb-10">
           <div>
             <h1 className="text-6xl text-title-red font-medium font-krona">
@@ -85,8 +85,8 @@ const index: React.FC<indexProps> = () => (
             ))}
           </div>
         </div>
-        <div className="font-bold pb-5 font-karla text-title-red">
-          <div className="my-2 sm:text-xl text-lg flex sm:flex-row flex-col w-full">
+        <div className="font-bold font-karla text-title-red">
+          <div className="sm:text-xl text-lg flex sm:flex-row flex-col w-full">
             <a href="mailto:prithvianilk@gmail.com">
               Email: prithvianilk@gmail.com
             </a>
