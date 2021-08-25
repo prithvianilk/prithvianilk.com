@@ -29,12 +29,12 @@ const Project: React.FC<ProjectProps> = ({
     >
       <div>
         <div className="text-3xl font-semibold">{name}</div>
-        <p className="text-gray-700 text-lg my-2">{short}</p>
+        <p className="font-semibold text-gray-700 text-lg my-2">{short}</p>
         <div className="text-lg">{description}</div>
       </div>
       <a
         target="_blank"
-        className="hover:text-title-red hover:font-bold"
+        className="mt-10 text-title-red underline font-bold"
         href={link}
       >
         Link to project

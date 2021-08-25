@@ -14,13 +14,8 @@ const projects = [
       "A web application to create, submit and evalutate programming assignments",
     description: (
       <ul>
-        <li>
-          - Helped develop the entire app using React, Node.js and Typescript
-        </li>
-        <li>
-          - Built a HTTP microservice to run and execute code in multiple
-          languages using Go
-        </li>
+        <li>- Tech Stack: React, Node.js, MongoDB and Typescript</li>
+        <li>- Built an HTTP based online judge microservice in Go</li>
       </ul>
     ),
     link: "https://sublit.in",
@@ -30,25 +25,24 @@ const projects = [
     short: "A mobile application that teaches programming through flowcharts",
     description: (
       <ul>
-        <li>
-          - Helped develop the entire app using React Native and Typescript
-        </li>
-        <li>
-          - Our team won first place in the Hashcode hackathon organized by PIL
-        </li>
+        <li>- Tech Stack: React Native and Typescript</li>
+        <li>- Won first place in the Hashcode hackathon organized by PIL</li>
       </ul>
     ),
     link: "https://github.com/VarunMK/flode",
   },
   {
     name: "GAN",
-    short:
-      "An implementation of the Generative Adversarial Networks paper on MNIST",
+    short: "An implementation of a GAN trained on the MNIST dataset",
     description: (
       <ul>
         <li>
           - Implemented the original Generative Adversarial Networks paper using
           PyTorch
+        </li>
+        <li>
+          - Able to generate sample images from the same distribution as the
+          MNIST dataset
         </li>
       </ul>
     ),
@@ -60,8 +54,8 @@ const projects = [
     description: (
       <ul>
         <li>
-          - Implemented LSTM’s and GRU’s to classify movie reviews into 5
-          classes
+          - Implemented LSTM’s and GRU’s in Pytorch to classify movie reviews
+          into 5 classes based on their sentiment
         </li>
         <li>- Achieved an accuracy of 63.54%</li>
       </ul>
@@ -77,7 +71,7 @@ const projects = [
           - Implemented complete emulator and opcode handlers for the CHIP-8
           system using C++ and SDL2
         </li>
-        <li>- The system can play games like PONG and TETRIS</li>
+        <li>- The emulator can run ROMs of games like PONG and TETRIS</li>
       </ul>
     ),
     link: "https://github.com/prithvianilk/chip8-cpp",
@@ -95,9 +89,9 @@ const index: React.FC<indexProps> = () => (
         rel="stylesheet"
       />
     </Head>
-    <div className="flex justify-around w-screen text-black bg-white-bg">
-      <div className="lg:w-9/12 w-10/12 lg:my-24 my-16 mx-auto">
-        <div className="flex justify-between mb-10">
+    <div className="w-full text-black bg-white-bg">
+      <div className="w-10/12 lg:my-24 my-16 mx-auto">
+        <div className="flex justify-between">
           <div>
             <h1 className="text-6xl text-title-red my-2 font-medium font-krona">
               Prithvi Anil Kumar
@@ -115,21 +109,30 @@ const index: React.FC<indexProps> = () => (
               </p>
             </div>
             <div className="font-bold text-title-red">
-              <div className="lg:text-xl text-lg flex lg:flex-row flex-col w-full">
-                <a href="mailto:prithvianilk@gmail.com">
-                  Email: prithvianilk@gmail.com
-                </a>
+              <div className="xl:text-xl text-lg flex xl:flex-row flex-col w-full">
+                <p>
+                  Phone: <span>+91 7406776698</span>
+                </p>
+                <p className="xl:ml-5 ml-0">
+                  Email:{" "}
+                  <a href="mailto:prithvianilk@gmail.com" className="underline">
+                    prithvianilk@gmail.com
+                  </a>
+                </p>
+                <p className="xl:ml-5 ml-0">
+                  Github:{" "}
+                  <a
+                    href="https://github.com/prithvianilk"
+                    className="underline"
+                  >
+                    @prithvianilk
+                  </a>
+                </p>
                 <a
                   href="https://drive.google.com/file/d/1e-oX0erxJK8t_txuR5RTik9j1y_flA_O/view?usp=sharing"
-                  className="lg:ml-5 ml-0"
+                  className="xl:ml-5 ml-0 underline"
                 >
                   Resume
-                </a>
-                <a
-                  href="https://github.com/prithvianilk"
-                  className="lg:ml-5 ml-0"
-                >
-                  Github: @prithvianilk
                 </a>
               </div>
             </div>
@@ -159,6 +162,18 @@ const index: React.FC<indexProps> = () => (
             ))}
           </div>
         </div>
+      </div>
+      <div className="my-10">
+        <p className="text-center font-karla text-xl font-bold">
+          Made with{" "}
+          <span role="img" aria-label="heart">
+            ❤
+          </span>
+          ️ in Bengaluru{" "}
+          <span role="img" aria-label="indian flag">
+            🇮🇳
+          </span>
+        </p>
       </div>
     </div>
   </main>
