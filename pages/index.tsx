@@ -53,9 +53,7 @@ const index: React.FC<indexProps> = () => (
             </div>
             <div className="font-bold text-title-red">
               <div className="xl:text-xl text-lg flex xl:flex-row flex-col w-full">
-                <p>
-                  Phone: +91 7406776698
-                </p>
+                <p>Phone: +91 7406776698</p>
                 <p className="xl:ml-5 ml-0">
                   Email:{" "}
                   <a href="mailto:prithvianilk@gmail.com" className="underline">
@@ -83,10 +81,12 @@ const index: React.FC<indexProps> = () => (
           <div className="lg:flex justify-center flex-col hidden min-h-full">
             <div>
               <Image
-                className="rounded-full"
+                priority
+                quality={100}
+                src={profile}
                 width="200px"
                 height="200px"
-                src={profile}
+                className="rounded-full"
               />
             </div>
           </div>
