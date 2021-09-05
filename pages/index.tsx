@@ -54,7 +54,7 @@ const index: React.FC<indexProps> = () => (
             <div className="font-bold text-title-red">
               <div className="xl:text-xl text-lg flex xl:flex-row flex-col w-full">
                 <p>
-                  Phone: <span>+91 7406776698</span>
+                  Phone: +91 7406776698
                 </p>
                 <p className="xl:ml-5 ml-0">
                   Email:{" "}
