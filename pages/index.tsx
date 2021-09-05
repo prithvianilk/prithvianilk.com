@@ -1,87 +1,30 @@
 import React from "react";
 import Head from "next/head";
 import Image from "next/image";
-import Project from "../components/Project";
 // @ts-ignore
 import profile from "../public/profilesq.jpeg";
+import Projects from "../components/Projects";
 
 interface indexProps {}
-
-const projects = [
-  {
-    name: "Sublit",
-    short:
-      "A web application to create, submit and evalutate programming assignments",
-    description: (
-      <ul>
-        <li>- Tech Stack: React, Node.js, MongoDB and Typescript</li>
-        <li>- Built an HTTP based online judge microservice in Go</li>
-      </ul>
-    ),
-    link: "https://sublit.in",
-  },
-  {
-    name: "Flode",
-    short: "A mobile application that teaches programming through flowcharts",
-    description: (
-      <ul>
-        <li>- Tech Stack: React Native and Typescript</li>
-        <li>- Won first place in the Hashcode hackathon organized by PIL</li>
-      </ul>
-    ),
-    link: "https://github.com/VarunMK/flode",
-  },
-  {
-    name: "GAN",
-    short: "An implementation of a GAN trained on the MNIST dataset",
-    description: (
-      <ul>
-        <li>
-          - Implemented the original Generative Adversarial Networks paper using
-          PyTorch
-        </li>
-        <li>
-          - Able to generate sample images from the same distribution as the
-          MNIST dataset
-        </li>
-      </ul>
-    ),
-    link: "https://github.com/prithvianilk/gan",
-  },
-  {
-    name: "Movie Review Sentiment Analysis",
-    short: "Movie Review Sentiment Analysis on Rotten Tomatoes Dataset",
-    description: (
-      <ul>
-        <li>
-          - Implemented LSTM’s and GRU’s in Pytorch to classify movie reviews
-          into 5 classes based on their sentiment
-        </li>
-        <li>- Achieved an accuracy of 63.54%</li>
-      </ul>
-    ),
-    link: "https://github.com/prithvianilk/mrsa-kaggle",
-  },
-  {
-    name: "Chip-8",
-    short: "An emulator for the CHIP-8 System",
-    description: (
-      <ul>
-        <li>
-          - Implemented complete emulator and opcode handlers for the CHIP-8
-          system using C++ and SDL2
-        </li>
-        <li>- The emulator can run ROMs of games like PONG and TETRIS</li>
-      </ul>
-    ),
-    link: "https://github.com/prithvianilk/chip8-cpp",
-  },
-];
 
 const index: React.FC<indexProps> = () => (
   <main>
     <Head>
+      {/* open graph data */}
       <title>Prithvi Anil Kumar</title>
+      <meta
+        name="description"
+        content="Third Year CSE student at PES University"
+      />
+      <meta property="og:title" content="Prithvi Anil Kumar" />
+      <meta
+        property="og:description"
+        content="Third Year CSE student at PES University"
+      />
+      <meta property="og:url" content="https://prithvianilk.com/" />
+      <meta property="og:type" content="website" />
+
+      {/* google fonts */}
       <link rel="preconnect" href="https://fonts.googleapis.com" />
       <link rel="preconnect" href="https://fonts.gstatic.com" />
       <link
@@ -129,7 +72,7 @@ const index: React.FC<indexProps> = () => (
                   </a>
                 </p>
                 <a
-                  href="https://drive.google.com/file/d/1e-oX0erxJK8t_txuR5RTik9j1y_flA_O/view?usp=sharing"
+                  href="https://docs.google.com/document/d/14SndIZS_gtnX0tghJybiKR2XlcwbY2-9qoUigCcwPlw/edit?usp=sharing"
                   className="xl:ml-5 ml-0 underline"
                 >
                   Resume
@@ -151,15 +94,7 @@ const index: React.FC<indexProps> = () => (
         <div className="mt-20 font-karla">
           <h1 className="text-4xl font-bold text-center">Projects</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2">
-            {projects.map(({ name, description, short, link }, index) => (
-              <Project
-                key={`project-${index}`}
-                name={name}
-                description={description}
-                link={link}
-                short={short}
-              />
-            ))}
+            <Projects />
           </div>
         </div>
       </div>
