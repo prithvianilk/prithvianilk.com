@@ -50,7 +50,7 @@ const index: React.FC<indexProps> = () => (
                 >
                   Sublit
                 </a>{" "}
-                has been shortlisted among the top 10 idea's by Cisco and
+                has been shortlisted among the top 10 ideas by Cisco and
                 NASSCOM foundation's ThinQbator Program to receive a seed Grant
                 of Rs. 5,00,000
               </p>
