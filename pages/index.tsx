@@ -39,14 +39,32 @@ const index: React.FC<indexProps> = () => (
             <h1 className="text-6xl text-title-red my-2 font-medium font-krona">
               Prithvi Anil Kumar
             </h1>
-            <div className="my-5">
-              <p className="my-1 text-2xl font-karla">
-                Third year CSE student at PES University
+            <div className="my-5 font-karla text-xl xl:text-2xl w-full xl:w-3/4">
+              <p className="my-4">Third year CSE student at PES University</p>
+              <p className="my-4">
+                My startup{" "}
+                <a
+                  target="_blank"
+                  href="https://sublit.in"
+                  className="font-bold text-title-red underline"
+                >
+                  Sublit
+                </a>{" "}
+                has been shortlisted among the top 10 idea's by Cisco and
+                NASSCOM foundation's ThinQbator Program to receive a seed Grant
+                of Rs. 5,00,000
               </p>
-              <p className="my-1 text-2xl font-karla">
-                Co-Head of The Alcoding Club
+              <p className="my-4">
+                Co-Head of{" "}
+                <a
+                  target="_blank"
+                  href="https://thealcodingclub.vercel.app/"
+                  className="font-bold text-title-red underline"
+                >
+                  The Alcoding Club
+                </a>
               </p>
-              <p className="my-1 text-2xl font-karla">
+              <p className="my-4">
                 Research Intern at Center of Cloud Computing & Big Data, PES
                 University
               </p>
@@ -84,8 +102,8 @@ const index: React.FC<indexProps> = () => (
                 priority
                 quality={100}
                 src={profile}
-                width="200px"
-                height="200px"
+                width="240px"
+                height="240px"
                 className="rounded-full"
               />
             </div>

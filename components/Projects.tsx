@@ -10,10 +10,13 @@ const projects = [
     description: (
       <ul>
         <li>
-          - Tech Stack: React, Typescript, Node.js, MongoDB, Go, Docker and
-          Heroku
+          - Tech Stack: Typescript, React, Node.js, MongoDB (on Atlas), Go,
+          Docker, Docker Swarm, Digital Ocean and Heroku
         </li>
-        <li>- Built an HTTP based online judge service</li>
+        <li>
+          - I completely developed, owned and unit-tested our online judge
+          service
+        </li>
       </ul>
     ),
     link: "https://sublit.in",
@@ -25,7 +28,10 @@ const projects = [
     description: (
       <ul>
         <li>- Tech Stack: React Native, Expo and Typescript</li>
-        <li>- Won first place in the Hashcode hackathon organized by PIL</li>
+        <li>
+          - My team won first place in the "Hashcode" 24-hour hackathon
+          organized by PES Innvovation Lab
+        </li>
       </ul>
     ),
     link: "https://github.com/VarunMK/flode",
