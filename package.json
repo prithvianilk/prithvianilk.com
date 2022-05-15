@@ -8,10 +8,11 @@
     "start": "next start"
   },
   "dependencies": {
-    "next": "^11.1.2",
-    "next-images": "^1.7.0",
-    "react": "17.0.1",
-    "react-dom": "17.0.1",
+    "next": "12.1.6",
+    "next-images": "1.8.4",
+    "react": "18.1.0",
+    "react-dom": "18.1.0",
+    "react-spring": "^9.4.5",
     "use-3d-effect": "^1.1.0"
   },
   "devDependencies": {

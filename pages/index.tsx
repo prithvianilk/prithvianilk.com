@@ -1,9 +1,9 @@
-import React from "react";
-import Head from "next/head";
-import Image from "next/image";
+import React from 'react';
+import Head from 'next/head';
+import Image from 'next/image';
 // @ts-ignore
-import profile from "../public/profilesq.jpeg";
-import Projects from "../components/Projects";
+import profile from '../public/profilesq.jpeg';
+import Projects from '../components/Projects';
 
 interface indexProps {}
 
@@ -31,31 +31,41 @@ const index: React.FC<indexProps> = () => (
         href="https://fonts.googleapis.com/css2?family=Karla&family=Krona+One&display=swap"
         rel="stylesheet"
       />
+
+      {/* Favicon */}
+      <link rel="shortcut icon" href="/favicon.png" type="image/x-icon" />
     </Head>
-    <div className="w-full text-black bg-white-bg">
-      <div className="w-10/12 lg:my-24 my-16 mx-auto">
-        <div className="flex justify-between">
+    <div className="w-full my-14 text-black bg-white-bg">
+      <div className="w-10/12 mx-auto">
+        <div className="flex justify-between flex-col-reverse lg:flex-row">
           <div>
             <h1 className="text-6xl text-title-red my-2 font-medium font-krona">
               Prithvi Anil Kumar
             </h1>
-            <div className="my-5 font-karla text-xl xl:text-2xl w-full xl:w-3/4">
+            <div className="my-4 font-karla text-xl xl:text-2xl w-full xl:w-3/4">
               <p className="my-4">Third year CSE student at PES University</p>
+              <p className="my-4">Upcoming Summer Intern @ Groww</p>
+              <div className="my-4">
+                <p className="mb-2">
+                  Core developer @{' '}
+                  <a
+                    target="_blank"
+                    href="https://sublit.in"
+                    className="font-bold text-title-red underline"
+                  >
+                    Sublit
+                  </a>
+                  {', '} where we are helping 2000+ students and 50+ teachers
+                  design, code and auto-evaluate programming assignments
+                </p>
+                <p className="mt-2">
+                  It has been shortlisted among the top 10 ideas by Cisco and
+                  NASSCOM foundation's ThinQbator Program to receive a Seed
+                  Grant of Rs. 5,00,000
+                </p>
+              </div>
               <p className="my-4">
-                My startup{" "}
-                <a
-                  target="_blank"
-                  href="https://sublit.in"
-                  className="font-bold text-title-red underline"
-                >
-                  Sublit
-                </a>{" "}
-                has been shortlisted among the top 10 ideas by Cisco and
-                NASSCOM foundation's ThinQbator Program to receive a seed Grant
-                of Rs. 5,00,000
-              </p>
-              <p className="my-4">
-                Co-Head of{" "}
+                Co-Head of{' '}
                 <a
                   target="_blank"
                   href="https://thealcodingclub.vercel.app/"
@@ -63,9 +73,7 @@ const index: React.FC<indexProps> = () => (
                 >
                   The Alcoding Club
                 </a>
-              </p>
-              <p className="my-4">
-                Research Intern at Center of Cloud Computing & Big Data, PES
+                {', '} the official Competitive Programming Club of PES
                 University
               </p>
             </div>
@@ -73,13 +81,13 @@ const index: React.FC<indexProps> = () => (
               <div className="xl:text-xl text-lg flex xl:flex-row flex-col w-full">
                 <p>Phone: +91 7406776698</p>
                 <p className="xl:ml-5 ml-0">
-                  Email:{" "}
+                  Email:{' '}
                   <a href="mailto:prithvianilk@gmail.com" className="underline">
                     prithvianilk@gmail.com
                   </a>
                 </p>
                 <p className="xl:ml-5 ml-0">
-                  Github:{" "}
+                  Github:{' '}
                   <a
                     href="https://github.com/prithvianilk"
                     className="underline"
@@ -96,8 +104,8 @@ const index: React.FC<indexProps> = () => (
               </div>
             </div>
           </div>
-          <div className="lg:flex justify-center flex-col hidden min-h-full">
-            <div>
+          <div className="flex justify-center flex-col min-h-full mb-10">
+            <div className="flex justify-center">
               <Image
                 priority
                 quality={100}
@@ -109,24 +117,24 @@ const index: React.FC<indexProps> = () => (
             </div>
           </div>
         </div>
-        <div className="mt-20 font-karla">
+        <div className="mt-8 lg:mt-14 mb-3 font-karla">
           <h1 className="text-4xl font-bold text-center">Projects</h1>
           <div className="grid grid-cols-1 lg:grid-cols-2">
             <Projects />
           </div>
         </div>
-      </div>
-      <div className="my-10">
-        <p className="text-center font-karla text-xl font-bold">
-          Made with{" "}
-          <span role="img" aria-label="heart">
-            ❤
-          </span>
-          ️ in Bengaluru{" "}
-          <span role="img" aria-label="indian flag">
-            🇮🇳
-          </span>
-        </p>
+        <div>
+          <p className="text-center font-karla text-xl font-bold">
+            Made with{' '}
+            <span role="img" aria-label="heart">
+              ❤️
+            </span>{' '}
+            in Bengaluru{' '}
+            <span role="img" aria-label="indian flag">
+              🇮🇳
+            </span>
+          </p>
+        </div>
       </div>
     </div>
   </main>

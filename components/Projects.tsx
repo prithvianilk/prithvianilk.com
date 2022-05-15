@@ -1,85 +1,63 @@
-import React from "react";
-import { animated } from "react-spring";
-import { use3dEffect } from "use-3d-effect";
+import React from 'react';
+import { animated } from 'react-spring';
+import { use3dEffect } from 'use-3d-effect';
 
 const projects = [
   {
-    name: "Sublit",
+    name: 'Sublit',
     short:
-      "A web platform to create, submit and evalutate programming assignments",
+      'A web platform to create, submit and evalutate programming assignments',
     description: (
       <ul>
         <li>
-          - Tech Stack: Typescript, React, Node.js, MongoDB (on Atlas), Go,
-          Docker, Docker Swarm, Digital Ocean and Heroku
-        </li>
-        <li>
-          - I completely developed, owned and unit-tested our online judge
-          service
+          - I touched all parts of the stack, from building{' '}
+          <span className="italic"> pretty </span> React Components to deploying
+          our backend services on AWS
         </li>
       </ul>
     ),
-    link: "https://sublit.in",
+    link: 'https://sublit.in',
   },
   {
-    name: "Flode",
+    name: 'Laddoo',
     short:
-      "A mobile application that teaches programming concepts through flowcharts",
+      'A web application providing analytics and meal recommendations based on Swiggy order data',
     description: (
       <ul>
-        <li>- Tech Stack: React Native, Expo and Typescript</li>
         <li>
-          - My team won first place in the "Hashcode" 24-hour hackathon
+          - Our project won first place in the "Dotslash" Hackathon, Aatmatrisha
+          2022
+        </li>
+      </ul>
+    ),
+    link: 'https://github.com/prithvianilk/laddoo',
+  },
+  {
+    name: 'RDFS',
+    short: 'A reliable, distributed file system inspired by HDFS',
+    description: (
+      <ul>
+        <li>
+          - Implemented a reliable, distributed file system based on HDFS's
+          (Hadoop) architecture
+        </li>
+      </ul>
+    ),
+    link: 'https://github.com/prithvianilk/rdfs',
+  },
+  {
+    name: 'Flode',
+    short:
+      'A mobile application that teaches programming concepts through flowcharts',
+    description: (
+      <ul>
+        <li>
+          - Our project won first place in the "Hashcode" Hackathon 2021
           organized by PES Innvovation Lab
         </li>
       </ul>
     ),
-    link: "https://github.com/VarunMK/flode",
-  },
-  {
-    name: "GAN",
-    short: "An implementation of a GAN trained on the MNIST dataset",
-    description: (
-      <ul>
-        <li>
-          - Implemented the original Generative Adversarial Networks paper using
-          PyTorch
-        </li>
-        <li>
-          - Able to generate sample images from the same distribution as the
-          MNIST dataset
-        </li>
-      </ul>
-    ),
-    link: "https://github.com/prithvianilk/gan",
-  },
-  {
-    name: "Movie Review Sentiment Analysis",
-    short: "Movie Review Sentiment Analysis on Rotten Tomatoes Dataset",
-    description: (
-      <ul>
-        <li>
-          - Implemented LSTM’s and GRU’s in Pytorch to classify movie reviews
-          into 5 classes based on their sentiment
-        </li>
-        <li>- Achieved an accuracy of 63.54%</li>
-      </ul>
-    ),
-    link: "https://github.com/prithvianilk/mrsa-kaggle",
-  },
-  {
-    name: "Chip-8",
-    short: "An emulator for the CHIP-8 System",
-    description: (
-      <ul>
-        <li>
-          - Implemented complete emulator and opcode handlers for the CHIP-8
-          system using C++ and SDL2
-        </li>
-        <li>- The emulator can run ROMs of games like PONG and TETRIS</li>
-      </ul>
-    ),
-    link: "https://github.com/prithvianilk/chip8-cpp",
+    link: 'https://github.com/VarunMK/flode',
   },
 ];
 
