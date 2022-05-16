@@ -83,17 +83,17 @@ const Project: React.FC<ProjectProps> = ({
       style={{
         ...style,
       }}
-      className="bg-white text-black my-10 lg:mx-10 mx-0 p-10 lg:w-10/12 w-full border border-black rounded-lg flex flex-col justify-between"
+      className="text-white my-10 lg:mx-10 mx-0 p-10 lg:w-10/12 w-full border border-white rounded-lg flex flex-col justify-between"
       {...mouseHandlers}
     >
       <div>
-        <div className="text-3xl font-semibold">{name}</div>
-        <p className="font-semibold text-gray-700 text-lg my-2">{short}</p>
+        <div className="text-3xl font-extrabold">{name}</div>
+        <p className="font-bold text-lg my-2">{short}</p>
         <div className="text-lg">{description}</div>
       </div>
       <a
         target="_blank"
-        className="mt-10 text-title-red underline font-bold"
+        className="mt-10 text-link-pink underline font-bold"
         href={link}
       >
         Link to project

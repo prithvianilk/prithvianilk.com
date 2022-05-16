@@ -1,16 +1,17 @@
 module.exports = {
-  mode: "jit",
-  purge: ["./pages/**/*.{js,ts,jsx,tsx}", "./components/**/*.{js,ts,jsx,tsx}"],
+  mode: 'jit',
+  purge: ['./pages/**/*.{js,ts,jsx,tsx}', './components/**/*.{js,ts,jsx,tsx}'],
   darkMode: false, // or 'media' or 'class'
   theme: {
     extend: {
       colors: {
-        "white-bg": "#FEF7FC",
-        "title-red": "#E36E60",
+        'title-green': '#50fa7b',
+        'link-pink': '#ff79c6',
+        white: '#f8f8f2',
       },
       fontFamily: {
-        krona: ["Krona One", "sans-serif"],
-        karla: ["Karla", "sans-serif"],
+        krona: ['Krona One', 'sans-serif'],
+        karla: ['Karla', 'sans-serif'],
       },
     },
   },
