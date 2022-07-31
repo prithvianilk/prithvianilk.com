@@ -42,8 +42,17 @@ const index: NextPage = () => (
               Prithvi Anil Kumar
             </h1>
             <div className="my-4 font-karla text-xl xl:text-2xl w-full xl:w-3/4">
-              <p className="my-4">Third year CSE student at PES University</p>
-              <p className="my-4">Upcoming Summer Intern @ Groww</p>
+              <p className="my-4">Fourth year CSE student @ PES University</p>
+              <p className="my-4">
+                Backend Intern (May - July, 2022) @{' '}
+                <a
+                  target="_blank"
+                  href="https://groww.in/"
+                  className="font-bold text-link-pink underline"
+                >
+                  Groww
+                </a>
+              </p>
               <div className="my-4">
                 <p className="mb-2">
                   Core developer @{' '}
