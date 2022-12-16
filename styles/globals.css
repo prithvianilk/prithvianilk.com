@@ -4,4 +4,8 @@
 
 html {
   background-color: #282a36;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
